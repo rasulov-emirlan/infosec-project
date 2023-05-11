@@ -12,6 +12,8 @@ RUN go mod download
 
 COPY main.go main.go
 
+COPY set set
+
 RUN apk add build-base
 
 RUN apk add libpcap-dev
@@ -28,6 +30,6 @@ RUN apk add libpcap-dev
 
 COPY --from=builder /bin/project /bin/project
 
-COPY pcap pcap
+COPY pcap /pcap
 
 ENTRYPOINT ["/bin/project"]
