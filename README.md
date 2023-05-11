@@ -10,8 +10,8 @@ docker build -t infosec-project ./
 docker run infosec-project pcap/null_scan.pcap
 ```
 
-Now you should see something like this
-![example image](https://github.com/rasulov-emimrlan/infosec-project/blob/master/images/example.png?raw=true)
+## Now you should see something like this
+![example image](https://github.com/rasulov-emirlan/infosec-project/blob/master/images/example.png)
 
 # keep in mind
 
